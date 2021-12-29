@@ -37,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
             programming language is currently Racket.
           </p>
           <img
-            src="racket-my-beloved.gif"
+            src="/racket-my-beloved.gif"
             alt="a gif of a heart shaped locket opening, revealing the phrase 'Racket my beloved'"
           />
           <small className="image-caption">
