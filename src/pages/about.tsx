@@ -61,7 +61,7 @@ const BlogIndex = ({ data, location }) => {
             <StaticImage
               alt="Me, in a grey hoodie scratching my head looking confused"
               class="my-ugly-mug"
-              src="..\images\grey-hoodie.jpg"
+              src="../images/grey-hoodie.jpg"
               placeholder="none"
               aspectRatio={1}
             />
