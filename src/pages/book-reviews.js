@@ -19,6 +19,10 @@ const BlogIndex = ({ data, location }) => {
           </div>
           <ol class="quote-list">
             <Quote
+              title="The Reasoned Schemer (ok+)"
+              content="A fun and eyeopening introduction to the world of relational programming."
+            />
+            <Quote
               title="The Pragmatic Programmer (ok+)"
               content="The only 'guru' book I would ever recommend. Almost every page contains some gem of wisdom that helps illuminate what good software development really means. While the homey anecdotes can be a bit grating, it's extremely easy to read and understand."
             />
@@ -90,10 +94,6 @@ const BlogIndex = ({ data, location }) => {
               content="Good but boring!"
             />
 
-            <Quote
-              title="The Reasoned Schemer (ok+)"
-              content="A fun and eyeopening introduction to the world of relational programming."
-            />
             <Quote
               title="Learn You A Haskell For Greater Good (ok)"
               content="A very cute book that teaches Haskell. It's a wonderful read for any LISP'ers like me who want to see other approaches to functional programming."
