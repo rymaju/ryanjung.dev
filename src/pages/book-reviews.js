@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Quote from "../components/quote"
 import Seo from "../components/seo"
+import Dagger from "../components/dagger"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -31,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
               content={
                 <>
                   A proper introduction to computer science with a emphasis on
-                  systematic program design.<sup>☦</sup>
+                  systematic program design.<Dagger/>
                 </>
               }
               source={

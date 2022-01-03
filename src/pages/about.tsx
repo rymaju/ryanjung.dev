@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Dagger from "../components/dagger"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -28,7 +29,7 @@ const BlogIndex = ({ data, location }) => {
               I believe we have a moral imperative to create software that makes
               a positive impact on the world.
             </b>
-            <sup>☦</sup> If you're a Northeastern undergraduate and feel the
+            <Dagger/> If you're a Northeastern undergraduate and feel the
             same way, <a href="https://www.c4cneu.com/apply">join me</a>.
           </p>
           <p>
@@ -42,15 +43,15 @@ const BlogIndex = ({ data, location }) => {
           />
           <small className="image-caption">
             Not favorite, <i>least hated</i>. Racket is only my second favorite
-            programming language.<sup>☦</sup>
+            programming language.<Dagger/>
           </small>
           <p>
             I used to play collegiate Starcraft II when I had free time and the
-            game was still somewhat alive.<sup>☦</sup>
+            game was still somewhat alive.<Dagger/>
           </p>
           <p>
             I take care of two beautiful plants: a pothos named Alonzo and a
-            spider plant named Alan.<sup>☦</sup> If you have recommendations for
+            spider plant named Alan.<Dagger/> If you have recommendations for
             more plant names, let me know at{" "}
             <span className="code">ryan.matthew.jung⚓gmail.com</span>
           </p>

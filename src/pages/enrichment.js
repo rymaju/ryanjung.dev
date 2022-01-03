@@ -2,7 +2,7 @@ import { graphql } from "gatsby"
 import * as React from "react"
 import Layout from "../components/layout"
 import Quote from "../components/quote"
-
+import Dagger from "../components/dagger"
 import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
@@ -100,7 +100,7 @@ const BlogIndex = ({ data, location }) => {
               content={
                 <>
                   A wonderful intro to Scheme and interpreters, plus a bit of
-                  Minikanren<sup>☦</sup> at the end.
+                  Minikanren<Dagger/> at the end.
                 </>
               }
               source={

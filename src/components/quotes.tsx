@@ -1,5 +1,6 @@
 import React from "react"
 import Quote from "./quote"
+import Dagger from "./dagger"
 
 const Quotes: React.FC = () => (
   <ol className="quote-list">
@@ -40,7 +41,7 @@ const Quotes: React.FC = () => (
       title="On Classes"
       content={
         <>
-          classes should be immutable<sup>☦</sup> unless there’s a very good
+          classes should be immutable<Dagger/> unless there’s a very good
           reason to make them mutable.
         </>
       }
@@ -50,7 +51,7 @@ const Quotes: React.FC = () => (
     <Quote
       title={
         <>
-          One<sup>☦</sup> “very good reason”
+          One<Dagger/> “very good reason”
         </>
       }
       content="If any of the to-be-designed methods of a class must compute results
