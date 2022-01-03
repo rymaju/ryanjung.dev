@@ -153,6 +153,18 @@ const BlogIndex = ({ data, location }) => {
                 </>
               }
             />
+
+            <Quote
+              title="Even more links to interesting ideas!"
+              content="Prof. Hemann has an excellent collection of programming/logic resources. If you were at all interested in the content on this page then you'll love this."
+              source={
+                <>
+                  <a href="https://jasonhemann.github.io/links/">
+                    webpage
+                  </a>
+                </>
+              }
+            />
           </ol>
         </section>
       </div>
