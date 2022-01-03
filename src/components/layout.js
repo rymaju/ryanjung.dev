@@ -32,7 +32,7 @@ const Layout = ({ location, title, children }) => {
         <footer>
           <p>
             <small>
-              ☦ - This topic is either very interesting or a bit more nuanced
+              † - This topic is either very interesting or a bit more nuanced
               than I make it out to be, either way I intentionally omitted some
               details for sake of brevity. Ask me about this in person or email me if
               you're curious.
