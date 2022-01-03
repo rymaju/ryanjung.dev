@@ -11,7 +11,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="Enrichment"/>
+      <Seo title="Enrichment" />
       <div class="two-column-container">
         <section class="prose">
           <div class="preamble">
@@ -31,6 +31,17 @@ const BlogIndex = ({ data, location }) => {
             </small>
           </div>
           <ol class="quote-list">
+            <Quote
+              title="99,000 ways to say (I love you)"
+              content="or 'A Unified Approach to Solving Seven Programming Problems', but that's a worse title. This is a fun introduction to minikanren through a how it can effortlessly solve a series of challenging problems."
+              source={
+                <>
+                  <a href="https://io.livecode.ch/learn/namin/icfp2017-artifact-auas7pp">
+                    webpage
+                  </a>
+                </>
+              }
+            />
             <Quote
               title="Developing Developers*"
               content="How to teach computer science and why."
@@ -81,7 +92,7 @@ const BlogIndex = ({ data, location }) => {
               source={
                 <>
                   <a href="https://www.cl.cam.ac.uk/~nk480/essence-of-events.pdf">
-                    PDF
+                    pdf
                   </a>
                 </>
               }
@@ -100,7 +111,7 @@ const BlogIndex = ({ data, location }) => {
               content={
                 <>
                   A wonderful intro to Scheme and interpreters, plus a bit of
-                  Minikanren<Dagger/> at the end.
+                  Minikanren<Dagger /> at the end.
                 </>
               }
               source={
@@ -138,7 +149,7 @@ const BlogIndex = ({ data, location }) => {
               content="A intermediate introduction to message driven distributed systems. Good if you know basic web architecture (frontend/backend) and want to learn more."
               source={
                 <>
-                  <a href="https://www.youtube.com/watch?v=eRxLfUIMJwk">Talk</a>
+                  <a href="https://www.youtube.com/watch?v=eRxLfUIMJwk">talk</a>
                 </>
               }
             />
