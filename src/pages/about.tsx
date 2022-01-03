@@ -34,8 +34,8 @@ const BlogIndex = ({ data, location }) => {
           </p>
           <p>
             I'm a big Programming Languages nerd (see{" "}
-            <Link to="/cool-links">Enrichment</Link>). My least hated
-            programming language is currently Racket.
+            <Link to="/enrichment">Enrichment</Link>). My least hated
+            programming language is Racket.
           </p>
           <img
             src="/racket-my-beloved.gif"
