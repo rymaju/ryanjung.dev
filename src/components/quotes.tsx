@@ -1,7 +1,7 @@
 import React from "react"
 import Quote from "./quote"
 import Dagger from "./dagger"
-
+// some docs
 const Quotes: React.FC = () => (
   <ol className="quote-list">
     <Quote
