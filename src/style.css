@@ -196,3 +196,17 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+
+.blog-post {
+  max-width: 60ch;
+}
+
+.blog-list h2 {
+  font-size: 1.2em;
+}
+
+.blog-list {
+  max-width: 60ch;
+  list-style: none;
+  padding-left: 0;
+}
