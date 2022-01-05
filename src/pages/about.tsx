@@ -1,3 +1,4 @@
+
 import { graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
@@ -17,7 +18,7 @@ const BlogIndex = ({ data, location }) => {
           <p>
             I'm a 3rd year computer science student at Northeastern University
             in Boston. I've worked at Cisco and John Hancock, and I'm going to
-            work at Hubspot and Palantir in 2021.
+            work at Hubspot and Palantir in 2022.
           </p>
           <p>
             I'm also leading development at{" "}
