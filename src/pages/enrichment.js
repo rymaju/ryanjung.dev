@@ -32,7 +32,7 @@ const BlogIndex = ({ data, location }) => {
           </div>
           <ol class="quote-list">
             <Quote
-              title="99,000 ways to say (I love you)"
+              title="99,000 ways to say '(I love you)**"
               content="or 'A Unified Approach to Solving Seven Programming Problems', but that's less fun. This is a wondeful introduction to Minikanren that shows how it can effortlessly solve a series of challenging problems."
               source={
                 <>
