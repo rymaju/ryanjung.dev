@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Dagger from "../components/dagger"
 
-const BlogIndex = ({ data, location }) => {
+const About = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
   return (
@@ -80,7 +80,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default About
 
 export const pageQuery = graphql`
   query {
