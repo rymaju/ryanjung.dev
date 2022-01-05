@@ -35,7 +35,7 @@ const About = ({ data, location }) => {
           </p>
           <p>
             I'm a big Programming Languages nerd (see{" "}
-            <Link to="/enrichment">Enrichment</Link>). My least hated
+            <Link to="/links">Links</Link>). My least hated
             programming language is Racket.
           </p>
           <img

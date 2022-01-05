@@ -5,7 +5,7 @@ import Quote from "../components/quote"
 import Dagger from "../components/dagger"
 import Seo from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
+const Links = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
@@ -172,7 +172,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default Links
 
 export const pageQuery = graphql`
   query {
