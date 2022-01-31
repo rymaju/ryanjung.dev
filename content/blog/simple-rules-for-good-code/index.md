@@ -6,6 +6,10 @@ summary: The axioms of software development I try to abide by in order to write 
 tags:
 ---
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea18032a2bd825879b7f9b6c405bc06429cec880
 👷 This post is a work in progress!
 
 Whenever I try to explain what I think "good" programming means. I often have trouble articulating exactly what and why I think the way I do. This is an attempt to clarify my thought process, as well as a guide that I can return to when I'm working through a difficult problem. This is a living document, and will likely change as I gain more real world experience.
@@ -75,7 +79,11 @@ Its also difficult to write functions on data definitions that fundamentally are
 
 Often people choose data structures that are vague, which allows illegal state to be represented. Only use a collection when you truly have no idea how many elements will be stored. Even if you have some idea, for example if you know that the empty list or a list with over 50 elements is invalid, then clearly document it.
 
+<<<<<<< HEAD
 Dictionaries are useful but often misused. Its easy to just throw keys and values into them without thinking, then rely on them being there later. _There is no guarantee that any key exists in an arbitrary dictionary_. Therefore, if you only expose that dictionary without any documentation, then users will need to check for that key's existence and handle the case where it does exist (if you are lucky).
+=======
+Dictionaries are useful but often misused. Its easy to just throw keys and values into them without thinking, then rely on them being there later. *There is no guarantee that any key exists in an arbitrary dictionary*. Therefore, if you only expose that dictionary without any documentation, then users will need to check for that key's existence and handle the case where it does exist (if you are lucky).
+>>>>>>> ea18032a2bd825879b7f9b6c405bc06429cec880
 
 If you have a finite set of keys (fields) then simply use a record or struct, which have a finite set of named fields that must contain data. If the keys are truly an open set, ensure that the set of keys and values are well-defined and as refined as possible.
 
@@ -96,6 +104,10 @@ People often don't follow Test Driven Development because writing tests would be
 - A function that uses difficult to construct data: a sign that the data is not well designed, or dependencies are not well managed (See "Six Approaches to Dependency Injection")
 - A function that consumes/outputs a large amount of data: should be broken into smaller functions anyway, and tests for the large function can be constructed from tests for the helper functions.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ea18032a2bd825879b7f9b6c405bc06429cec880
 ### 2. Break functions down into conceptual tasks (keep it short)
 
 As a general rule, no function should exceed 10 lines. No function should contain whitespace delimiting blocks within the function. This is a code smell, and indicates that the function should be broken into the smaller functions for each block.
@@ -110,13 +122,21 @@ function makeCake (fridge, pantry) {
   eggs = fridge.eggs
   milk = fridge.milk
   flour = pantry.flour
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> ea18032a2bd825879b7f9b6c405bc06429cec880
   // Prepare cake
   wet = mixWet(eggs, milk)
   dry = mixDry(flour)
   batter = combine(wet, dry)
   tin = cakeTin.pour(batter)
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> ea18032a2bd825879b7f9b6c405bc06429cec880
   // Bake cake
   oven.insert(tin)
   wait(BAKING_TIME)
