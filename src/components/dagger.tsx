@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react"
 
 /**
  * A superscript symbol to indicate a footnote in the text.
@@ -7,4 +7,4 @@ import React from 'react';
  */
 const Dagger: React.FC = () => <sup>†</sup>
 
-export default Dagger;
+export default Dagger

@@ -32,7 +32,8 @@ const BlogIndex = ({ data, location }) => {
               content={
                 <>
                   A proper introduction to computer science with a emphasis on
-                  systematic program design.<Dagger/>
+                  systematic program design.
+                  <Dagger />
                 </>
               }
               source={

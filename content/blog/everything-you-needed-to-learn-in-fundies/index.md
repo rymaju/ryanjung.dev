@@ -16,7 +16,7 @@ Authors note (12/28/2021):
 
 I still agree with most of this, but not all. I realize that I myself did not fully understand many of these concepts as clearly as I thought. I have striked out and added some words/phrases to remove misleading or factually incorrect information.
 
-My writing is also awful. I wish I had paid more attention in my English writing classes.
+My writing is also awful. I wish I had paid more attention in English.
 
 ---
 

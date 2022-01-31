@@ -111,7 +111,8 @@ const Links = ({ data, location }) => {
               content={
                 <>
                   A wonderful intro to Scheme and interpreters, plus a bit of
-                  Minikanren<Dagger /> at the end.
+                  Minikanren
+                  <Dagger /> at the end.
                 </>
               }
               source={
@@ -159,9 +160,7 @@ const Links = ({ data, location }) => {
               content="Prof. Hemann has an excellent collection of programming/logic resources. If you were at all interested in the content on this page then you'll love this."
               source={
                 <>
-                  <a href="https://jasonhemann.github.io/links/">
-                    webpage
-                  </a>
+                  <a href="https://jasonhemann.github.io/links/">webpage</a>
                 </>
               }
             />

@@ -1,4 +1,3 @@
-
 import { graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as React from "react"
@@ -30,13 +29,13 @@ const About = ({ data, location }) => {
               I believe we have a moral imperative to create software that makes
               a positive impact on the world.
             </b>
-            <Dagger /> If you're a Northeastern undergraduate and feel the
-            same way, <a href="https://www.c4cneu.com/apply">join me</a>.
+            <Dagger /> If you're a Northeastern undergraduate and feel the same
+            way, <a href="https://www.c4cneu.com/apply">join me</a>.
           </p>
           <p>
             I'm a big Programming Languages nerd (see{" "}
-            <Link to="/links">Links</Link>). My least hated
-            programming language is Racket.
+            <Link to="/links">Links</Link>). My least hated programming language
+            is Racket.
           </p>
           <img
             src="/racket-my-beloved.gif"
@@ -44,17 +43,19 @@ const About = ({ data, location }) => {
           />
           <small className="image-caption">
             Not favorite, <i>least hated</i>. Racket is only my second favorite
-            programming language.<Dagger />
+            programming language.
+            <Dagger />
           </small>
           <p>
             I used to play collegiate Starcraft II when I had free time and the
-            game was still somewhat alive.<Dagger />
+            game was still somewhat alive.
+            <Dagger />
           </p>
           <p>
             I take care of two beautiful plants: a pothos named Alonzo and a
-            spider plant named Alan.<Dagger /> If you have recommendations for
-            more plant names, let me know at{" "}
-            <span className="code">ryan.matthew.jung⚓gmail.com</span>
+            spider plant named Alan.
+            <Dagger /> If you have recommendations for more plant names, let me
+            know at <span className="code">ryan.matthew.jung⚓gmail.com</span>
           </p>
         </section>
 
@@ -64,10 +65,11 @@ const About = ({ data, location }) => {
               alt="Me as a child chomping down on a comically large ice cream cone looking very very happy."
               class="my-ugly-mug"
               src="../images/ice-cream.jpg"
-
               aspectRatio={1}
             />
-            <p><small>Me, before Java stole all the joy from my life.</small></p>
+            <p>
+              <small>Me, before Java stole all the joy from my life.</small>
+            </p>
             <p>
               <a href="https://github.com/rymaju">Github</a> |{" "}
               <a href="https://www.linkedin.com/in/ryanmjung/">LinkedIn</a>

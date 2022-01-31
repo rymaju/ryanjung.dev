@@ -6,7 +6,6 @@ summary: The axioms of software development I try to abide by in order to write 
 tags:
 ---
 
-
 👷 This post is a work in progress!
 
 Whenever I try to explain what I think "good" programming means. I often have trouble articulating exactly what and why I think the way I do. This is an attempt to clarify my thought process, as well as a guide that I can return to when I'm working through a difficult problem. This is a living document, and will likely change as I gain more real world experience.
@@ -14,18 +13,18 @@ Whenever I try to explain what I think "good" programming means. I often have tr
 Here are the axioms of software development that I live by:
 
 0. its dangerous to code alone
-0. build simple extensible models of the domain (and understand them)
-1. think through examples
-2. break functions down into conceptual tasks (keep it short)
-3. always write a signature
-4. make the purpose obvious
-5. follow the structure of the data
-6. keep it pure, favor immutability
-7. separate impure code from pure code
-8. empower the caller
-9. abstract last
-10. optimize last
-11. use pretty pictures
+1. build simple extensible models of the domain (and understand them)
+2. think through examples
+3. break functions down into conceptual tasks (keep it short)
+4. always write a signature
+5. make the purpose obvious
+6. follow the structure of the data
+7. keep it pure, favor immutability
+8. separate impure code from pure code
+9. empower the caller
+10. abstract last
+11. optimize last
+12. use pretty pictures
 
 ### 0. Its dangerous to code alone
 
@@ -76,7 +75,7 @@ Its also difficult to write functions on data definitions that fundamentally are
 
 Often people choose data structures that are vague, which allows illegal state to be represented. Only use a collection when you truly have no idea how many elements will be stored. Even if you have some idea, for example if you know that the empty list or a list with over 50 elements is invalid, then clearly document it.
 
-Dictionaries are useful but often misused. Its easy to just throw keys and values into them without thinking, then rely on them being there later. *There is no guarantee that any key exists in an arbitrary dictionary*. Therefore, if you only expose that dictionary without any documentation, then users will need to check for that key's existence and handle the case where it does exist (if you are lucky).
+Dictionaries are useful but often misused. Its easy to just throw keys and values into them without thinking, then rely on them being there later. _There is no guarantee that any key exists in an arbitrary dictionary_. Therefore, if you only expose that dictionary without any documentation, then users will need to check for that key's existence and handle the case where it does exist (if you are lucky).
 
 If you have a finite set of keys (fields) then simply use a record or struct, which have a finite set of named fields that must contain data. If the keys are truly an open set, ensure that the set of keys and values are well-defined and as refined as possible.
 
@@ -97,7 +96,6 @@ People often don't follow Test Driven Development because writing tests would be
 - A function that uses difficult to construct data: a sign that the data is not well designed, or dependencies are not well managed (See "Six Approaches to Dependency Injection")
 - A function that consumes/outputs a large amount of data: should be broken into smaller functions anyway, and tests for the large function can be constructed from tests for the helper functions.
 
-
 ### 2. Break functions down into conceptual tasks (keep it short)
 
 As a general rule, no function should exceed 10 lines. No function should contain whitespace delimiting blocks within the function. This is a code smell, and indicates that the function should be broken into the smaller functions for each block.
@@ -112,13 +110,13 @@ function makeCake (fridge, pantry) {
   eggs = fridge.eggs
   milk = fridge.milk
   flour = pantry.flour
-  
+
   // Prepare cake
   wet = mixWet(eggs, milk)
   dry = mixDry(flour)
   batter = combine(wet, dry)
   tin = cakeTin.pour(batter)
-  
+
   // Bake cake
   oven.insert(tin)
   wait(BAKING_TIME)

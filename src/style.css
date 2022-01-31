@@ -12,6 +12,8 @@
     "Liberation Mono", "Courier New", monospace;
   --font-display: "Playfair Display", "Lora", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   font-family: var(--font-sans);
+
+  --prose-max-width: 75ch;
 }
 
 /* default to border-box */
@@ -60,7 +62,7 @@ video {
 }
 
 .prose {
-  max-width: min(500px, 100%);
+  max-width: min(var(--prose-max-width), 100%);
 }
 
 .nav-links {
@@ -198,7 +200,7 @@ h6 {
 }
 
 .blog-post {
-  max-width: 60ch;
+  max-width: var(--prose-max-width);
 }
 
 .blog-list h2 {
@@ -206,7 +208,7 @@ h6 {
 }
 
 .blog-list {
-  max-width: 60ch;
+  max-width: var(--prose-max-width);
   list-style: none;
   padding-left: 0;
 }

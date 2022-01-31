@@ -34,8 +34,8 @@ const Layout = ({ location, title, children }) => {
             <small>
               † - This topic is either very interesting or a bit more nuanced
               than I make it out to be, either way I intentionally omitted some
-              details for sake of brevity. Ask me about this in person or email me if
-              you're curious.
+              details for sake of brevity. Ask me about this in person or email
+              me if you're curious.
             </small>
           </p>
           © {new Date().getFullYear()}, Built with

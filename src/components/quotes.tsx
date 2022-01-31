@@ -25,57 +25,10 @@ const Quotes: React.FC = () => (
               oversight of errors which are monstrous to another eye."
       source="The Psychology of Programming"
     />
-
     <Quote
-      title="Programming By Coincidence"
-      content="Fred types in some code, tries it, and
-      it seems to work. Fred types in some more code, tries it, and it still
-      seems to work. After several weeks of coding this way, the program
-      suddenly stops working, and after hours of trying to fix it, he still
-      doesn't know why... Fred doesn't know why the code is failing because he
-      didn't know why it worked in the first place."
-      source="The Pragmatic Programmer"
-    />
-
-    <Quote
-      title="On Classes"
-      content={
-        <>
-          classes should be immutable<Dagger/> unless there’s a very good
-          reason to make them mutable.
-        </>
-      }
-      source="Josh Bloch, Effective Java"
-    />
-
-    <Quote
-      title={
-        <>
-          One<Dagger/> “very good reason”
-        </>
-      }
-      content="If any of the to-be-designed methods of a class must compute results
-      that depend on the history of method invocations (for an object), consider
-      making the class stateful and some of its methods imperative."
-      source="How to Design Classes"
-    />
-    <Quote
-      title="Low Level Programming"
-      content={
-        <>
-          I don’t care how much you know about continuations and closures and
-          exception handling: if you can’t explain{" "}
-          <a href="https://medium.com/@larissafeng/understanding-while-s-t-abb2cc518f96">
-            why
-          </a>{" "}
-          <span className="code">while (*s++ = *t++);</span> copies a string, or
-          if that isn’t the most natural thing in the world to you, well, you’re
-          programming based on superstition, as far as I’m concerned: a medical
-          doctor who doesn’t know basic anatomy, passing out prescriptions based
-          on what the pharma sales babe said would work.
-        </>
-      }
-      source="Joel Spolsky, Advice to Computer Science Students"
+      title="On Trusting Software Engineers"
+      content="I don't know quite how to put this, but our entire field is bad at what we do and if you rely on us everyone will die."
+      source={<a href="https://xkcd.com/2030/">xkcd #2030</a>}
     />
     <Quote
       title="Blub Programmers"

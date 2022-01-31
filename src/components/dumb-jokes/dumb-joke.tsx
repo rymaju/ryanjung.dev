@@ -8,7 +8,11 @@ const DumbJoke: React.FC = () => {
       My other <span className="code">car</span> is a{" "}
       <span className="code">cdr</span>
     </p>,
-    <p><a href="https://www.gnu.org/fun/jokes/ed-msg.en.html">Ed, man! man! ed</a></p>,
+    <p>
+      <a href="https://www.gnu.org/fun/jokes/ed-msg.en.html">
+        Ed, man! man! ed
+      </a>
+    </p>,
   ]
   const [jokeIndex, setJokeIndex] = useState<number>(
     Math.floor(Math.random() * jokes.length)
