@@ -74,7 +74,6 @@ const Quotes: React.FC = () => (
       title="Why Empathy Matters in Tech"
       content={
         <div className="video">
-          Light TW: Crying,  
           <iframe
             width="560"
             height="315"
