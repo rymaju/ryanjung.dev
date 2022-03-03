@@ -1,6 +1,6 @@
+import { StaticImage } from "gatsby-plugin-image"
 import React from "react"
 import Quote from "./quote"
-import Dagger from "./dagger"
 // some docs
 const Quotes: React.FC = () => (
   <ol className="quote-list">
@@ -54,18 +54,41 @@ const Quotes: React.FC = () => (
     />
 
     <Quote
-      title="The Value of Systematic Design"
-      content="Eventually your program will
-              also fail. Other programmers may use it in an unanticipated
-              manner. Real-world users may find differences between expected and
-              actual behavior. Because you have designed the code in a
-              systematic manner, you will know what to do."
+      title='When People Ask Me How I Got "So Good at Programming"'
+      content={
+        <StaticImage
+          src="https://i.pinimg.com/564x/29/42/ad/2942ad72943ca3e56c178983808781e0.jpg"
+          alt="A comic about how everything comes down to practice"
+        />
+      }
       source={
         <>
-          How to Design Programs,{" "}
-          <a href="https://htdp.org/2021-11-15/Book/part_epilogue.html">
-            Epilogue
+          <a href="https://www.instagram.com/sarahandersencomics/">
+            Sarah Andersen
           </a>
+        </>
+      }
+    />
+
+    <Quote
+      title="Why Empathy Matters in Tech"
+      content={
+        <div className="video">
+          Light TW: Crying,  
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/PogWhbDpCWs?start=687"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      }
+      source={
+        <>
+          <a href="https://www.youtube.com/c/hellomayuko">Mayuko Inoue</a>
         </>
       }
     />
